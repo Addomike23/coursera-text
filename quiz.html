@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Quiz App</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="quiz-container small" id="quiz-app">
+            <div class="question-number">
+                <h3>Page <span id="pages"></span></h3>
+            </div>
+            <div class="title">
+                <h2>User name: <span id="user"></span></h2>
+                <h1 id="time">Time <span>5minutes</span></h1>
+                <div class="timer">
+                    <span id="minutes">00 </span>
+                    <span id="colon">:</span>
+                    <span id="seconds">00</span>
+                </div>
+                <h1>Welcome to simply I.T test</h1>
+            </div>
+            <div class="questions">
+
+                <h2 id="question">Questions goes here</h2>
+            </div>
+
+            <div class="select-container">
+
+                <div class="selections">
+                    <input type="radio" name="answer" id="a" class="answers">
+                    <label for="a_text" id="a_text">answer for question</label>
+                </div>
+                <div class="selections">
+                    <input type="radio" name="answer" id="b" class="answers">
+                    <label for="b_text" id="b_text">answer for question</label>
+                </div>
+                <div class="selections">
+                    <input type="radio" name="answer" id="c" class="answers">
+                    <label for="c_text" id="c_text">answer for question</label>
+                </div>
+                <div class="selections">
+                    <input type="radio" name="answer" id="d" class="answers">
+                    <label for="d_text" id="d_text">answer for question</label>
+                </div>
+
+
+            </div>
+            <div class="btns">
+                <div class="btn-left">
+                    <button id="btn-left">Previous</button>
+                </div>
+                <div class="btn-right">
+                    <button id="btn-right">Next</button>
+                </div>
+            </div>
+            <div class="submit">
+                <button type="submit" id="submit">Submit</button>
+            </div>
+        </div>
+    </div>
+    <script src="quiz.js"></script>
+</body>
+
+</html>
